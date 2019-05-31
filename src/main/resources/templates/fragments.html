@@ -1,0 +1,32 @@
+<!-- 
+Deklarasikan semua fragement di sini
+ -->
+<div th:fragment="header_1">
+	<h1>Header 1</h1>
+</div>
+<div th:fragment="header_2">
+	<h1>Header 2</h1>
+</div>
+<div th:fragment="header_3">
+	<h1>Header 3</h1>
+</div>
+<div th:fragment="header">
+	<div th:replace="fragments :: header_1"></div>
+	<div th:replace="fragments :: header_2"></div>
+	<div th:replace="fragments :: header_3"></div>
+</div>
+
+<div th:fragment="footer_1">
+	<h1>Footer 1</h1>
+</div>
+<div th:fragment="footer_2">
+	<h1>Footer 2</h1>
+</div>
+<div th:fragment="footer_3">
+	<h1>Footer 3</h1>
+</div>
+<div th:fragment="footer">
+	<div th:replace="fragments :: footer_1"></div>
+	<div th:replace="fragments :: footer_2"></div>
+	<div th:replace="fragments :: footer_3"></div>
+</div>
